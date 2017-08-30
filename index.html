@@ -37,20 +37,22 @@
                         </div>
                         <div class="col-lg-10 col-md-10 col-xs-10 ">
                             <div id="app">
+                                <div v-for="item in wordLists_right">
                                 <div class="col-md-2">
                                     <a href="#">
-                                        <img class="img-responsive" v-bind:src="wordLists_right.avatar" alt="wordLists_right.name">
+                                        <img class="img-responsive" v-bind:src="item.avatar" alt="item.name">
                                     </a>
                                 </div>
                                 <div class="col-md-10">
                                     <div class="form-group">
                                         <h4>
-                                            {{wordLists_right.name}}
+                                            {{item.name}}
                                         </h4>
                                         <p>
-                                            {{wordLists_right.words}}
+                                            {{item.words}}
                                         </p>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
