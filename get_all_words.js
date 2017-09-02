@@ -32,22 +32,36 @@ fs.readdir(pathString, function(err, files) {
   //循环读取json文件的内容，并都存在jsonList数组内。读取出错的文件名存在errorFiles数组内。
   var jsonList = [];
   var errorFiles = [];
+  var container = [];
   for (var i = 0; i < jsonFiles.length; i++) {
     try {
       // 读取json文件
-      var content = jsonfile.readFileSync(pathString + jsonFiles[i]);
-      jsonList.push(content);
+      //var content = jsonfile.readFileSync(pathString + jsonFiles[i]);
+      jsonfile.readFile(pathString+jsonFiles[i], function (err, obj) {
+        if (err) {
+          console.log(err);
+        }
+        console.dir(obj);
+        container.push(obj);
+        jsonfile.writeFile(writePathString, container, function (err) {
+          if (err) {
+            console.log(err)
+          }
+          console.log('写入成功！');
+        });
+      });
+      //jsonList.push(content);
     } catch (err) {
       // 如果读取错误就把错误的文件名写入到errorFiles数组内
-      errorFiles.push(jsonFiles[i]);
+      //errorFiles.push(jsonFiles[i]);
     }
   }
 
   // 将收集到的数据写入到一个json文件中
-  jsonfile.writeFileSync(writePathString, jsonList);
+  //jsonfile.writeFileSync(writePathString, jsonList);
 
   // 将收集到的错误文件写入到一个json文件中
-  jsonfile.writeFileSync(errorPathString, errorFiles);
+  //jsonfile.writeFileSync(errorPathString, errorFiles);
 
   // 假如收集到的内容（json文件）格式乱怎么办？可以使用visual studio code的代码格式化插件自动调整格式，就会得出你想要的格式想过。
 });
