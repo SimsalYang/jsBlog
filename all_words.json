@@ -5,14 +5,14 @@
         "words": "学习编程思维和学习如何运用编程数据解决问题，深夜加餐"
     },
     {
-        "avatar": "http://tva2.sinaimg.cn/crop.558.0.1143.1143.180/670e76acgw1ehgchgijn2j21kw0vyqrf.jpg",
-        "name": "Andrea",
-        "words": "运用逻辑优势，开启业余程序员大门！"
-    },
-    {
         "avatar": "http://a2.qpic.cn/psb?/V11bQUyC41BSKW/cflhIsZGdGoKWSgWJBwAKBZXqyQWjW2weLdTh6AraeY!/b/dD8BAAAAAAAA&bo=fgKAAgAAAAARB84!&rf=viewer_4",
         "name": "陈浩",
         "words": "学习编程目的是想习得另一种看问题的思路"
+    },
+    {
+        "avatar": "http://tva2.sinaimg.cn/crop.558.0.1143.1143.180/670e76acgw1ehgchgijn2j21kw0vyqrf.jpg",
+        "name": "Andrea",
+        "words": "运用逻辑优势，开启业余程序员大门！"
     },
     {
         "avatar": "http://wx2.sinaimg.cn/square/95a79662ly1fidxfgug9fj20hs0hsta0.jpg",
@@ -24,13 +24,11 @@
         "name": "吴魁拼",
         "words": "区块链行业发展如此迅猛，我想进去看看！"
     },
-    null,
     {
         "avatar": "https://ws4.sinaimg.cn/large/006tNc79ly1ficrwvfngtj30wu0ihq5w.jpg",
         "name": "尹志宝",
         "words": "看了文章瞬间路转粉，迟到生来补交作业"
     },
-    null,
     {
         "avatar": "https://ws1.sinaimg.cn/large/006tNc79gy1fio9xha9hjj30hs0hsdgr.jpg",
         "name": "蔡东言",
@@ -51,7 +49,6 @@
         "name": "柴高平",
         "words": "希望这次能够正真学会一门语言"
     },
-    null,
     {
         "avatar": "https://ws2.sinaimg.cn/large/006tKfTcgy1fia3guals9j30e10dtdn3.jpg",
         "name": "程君",
@@ -77,25 +74,14 @@
         "words": "认真接触ruby语言是从两个月前开始的，学习全栈营的课程，有收获但是进步缓慢，学到目前的感觉还是不太懂，就连前面一课「提交一个项目」我都倍感吃力，基础不好，学习状态也不佳，我在想我是不是不适合学编程？想在几个月之间从小白入门编程于我难度还是挺大的，但是我会坚持学下去的，因为这是一门被人们认为要学会的技能，我就是想看看习得之后会给我带来多大的变化。"
     },
     {
-        "avatar": "https://github.com/Chenzd-homeland/sample_picture/blob/master/picture.jpg?raw=true",
-        "name": "陈自东",
-        "words": "通过学习JavaScript掌握大牛学习编程的方法，为学习别的编程技能打好基础。最终的目标是习得一项硬技能，换份有挑战性，能创造更大价值的工作。"
-    },
-    {
         "avatar": "http://wx1.sinaimg.cn/mw690/539843d2gy1ficrbw1497j20hs0hsjrv.jpg",
         "name": "戴军/cloudyview",
         "words": "大学的时候学过一年的C，那个时候实话说，没好好认真学。工作出来了，从事的工作范围都是跟软件，互联网相关，但是，每次自己总觉得编程这样的事情，交给专业人士就好，我做好我的产品经理/项目经理/业务架构设计这些工作就好。后来自己出来创业，又接触了区块链这些领域，越发觉得完全不懂编程，越来越像文盲——完全看不懂人家在做什么。特别是区块链。我之前的认为，让技术的归程序员，让经济的，人文的，管理的这些归到各自的专业人士那里去吧。但是比特币给我的震撼是，中本聪这个人根本就是用密码学，用程序，用计算机，而且，最可怕的是用这背后的思维方式，在碾压经济学。我是学经济和管理的，这让我相当焦虑。由于区块链的关系，我知道了李笑来老师。后来，又学习了他的《通往财富自由之路》，一边学，一边思考着如何践行，如果让我的焦虑成为我的刚需。而后来，我知道了新生大学，进来就看到JS的课程。没说的，立刻上！我希望学了以后，我能更好的理解中本聪的论文，我能更好的看懂区块链的那些代码。如果可能，我希望自己能为这些做出一些贡献，多少都好。我知道有相当多的区块链项目是采用NODE.JS来写的，有一天，希望自己构思的项目，自己能动手写出来。这是我学习JS的愿望。PS：我在注册的时候，将姓名当成用户名来输入了。我正在跟客服交涉是否能修改这个姓名。目前先用这个cloudyview来做作业。"
     },
-    null,
     {
         "avatar": "http://a4.qpic.cn/psb?/V10782zs2lPwov/w*Os6Zhbo2hGum4pucwjDAcTuU387FoWmRkZxCH29Xs!/b/dPcAAAAAAAAA&ek=1&kp=1&pt=0&bo=OAQ4BAAAAAARFyA!&vuin=24603898&tm=1502848800&sce=60-2-2&rf=viewer_4",
         "name": "崔淼",
         "words": "从事信息化相关工作，但编程却是小白，希望通过新生大学这个平台，学习JavaScript，为自己打开多维成长之路。"
-    },
-    {
-        "avatar": "http://img0.imgtn.bdimg.com/it/u=1649639124,2757239308&fm=27&gp=0.jpg",
-        "name": "崔雨薇",
-        "words": "学习有时是甜的，开心到可以飞起来，有时候又很累。但是因为有了一起学习的同伴，相互鼓励，学习变得一直都很甜。希望能把JS学到溜，同时，特别期待老师会教其他的课程，在编程的路上越走越远。"
     },
     {
         "avatar": "https://ws1.sinaimg.cn/large/006tNc79ly1fih8dej6twj3046046gln.jpg",
@@ -103,8 +89,8 @@
         "words": "希望能入门编程，虽然对职业路径还没有规划，但是敲代码是我人生中遇到的最爽的一件事"
     },
     {
-        "avatar": "https://avatars0.githubusercontent.com/u/30835292?v=4&u=0828fdc04493f465d3a4ee0957fb8397e9c0d940&s=400",
-        "name": "刁志聪",
+        "avatar": "https://pan.baidu.com/disk/home#list/vmode=list&path=%2F%E6%88%91%E7%9A%84%E7%85%A7%E7%89%87",
+        "name": "Diao Zhicong",
         "words": "我学习JS的心愿是，先将容易上手的JS学透，然后应用在自己的领域里，如果可能，转行编程行业，把自己的想法用编程的方式展现出来，这将会是一件非常有趣的事"
     },
     {
@@ -127,14 +113,11 @@
         "name": "Elizabeth周丽",
         "words": "2017年最重要的三件事之一就是学习编程，今年的目标是在年底时候成为高级新手，做出自己的网站。感谢新大开设的JavaScript，帮助我逐步打开编程世界的大门，让我有勇气在老师和同学们的陪伴下进入新的世界～ Hello,world!"
     },
-    null,
     {
         "avatar": "https://ws1.sinaimg.cn/large/ad915470gy1fid3b2869rj20qo0zkdmw.jpg",
         "name": "方庆扬",
         "words": "一想到以后可以在电脑上做出自己的东西，就很兴奋"
     },
-    null,
-    null,
     {
         "avatar": "https://ww3.sinaimg.cn/large/006tNc79ly1ficgraqd81j30jz0jzgqc.jpg",
         "name": "冯凯",
@@ -181,11 +164,6 @@
         "words": "搞定JS."
     },
     {
-        "avatar": "https://o3b126ie1.qnssl.com/avatar/cbdb8537-f7a4-4273-b0e3-76ab95d03e66",
-        "name": "黄家树",
-        "words": "JavaScipt is a widely used language in the world. There is a greate need in the worktime, so I want to learn it."
-    },
-    {
         "photograph": "(http://a3.qpic.cn/psb?/V10JH8df1OW8A3/vAEC2UOGMhnLxOhoh0Wkfd2*IyN5oR0s47gfPgG7lcE!/m/dG4BAAAAAAAAnull&bo=gAKAAgAAAAARBzA!&rf=photolist&t=5)",
         "name": "����",
         "dords": "���ѧһ�㣬˵����ʲôʱ����õ���js"
@@ -200,7 +178,6 @@
         "name": "黄永飞",
         "words": "你学习JavaScript的心愿，学会玩小程序"
     },
-    null,
     {
         "avatar": "https://ws4.sinaimg.cn/large/006tNc79gy1fim22xnv1oj30r80ra499.jpg",
         "name": "黄志华",
@@ -281,7 +258,6 @@
         "name": "李明星",
         "words": "正在紧跟着老师的脚步领略编程语言JavaScript的魅力，希望这次的学习之旅能帮助我打开编程的暗门"
     },
-    null,
     {
         "avatar": "https://ws1.sinaimg.cn/large/006tKfTcgy1fijm1e02f7j30zk0zctad.jpg",
         "name": "林德光",
@@ -302,7 +278,6 @@
         "name": "李涛",
         "words": "对编程领域很好奇，而且感兴趣。希望真正会用git工具，使用GitHub创建个人主页，编辑文档。这几天下来，我始终处于对这些新概念的懵懂状态，一遍遍地从最初的预习作业开始重新操作，一步步地按照老师的文档描述去练习，不断加深理解。"
     },
-    null,
     {
         "avatar": "http://pic6.58cdn.com.cn/zhuanzh/n_v1bl2lwkpsigsvriy7uftq.jpg",
         "name": "刘军",
@@ -344,11 +319,6 @@
         "words": "想知道程序员的世界是怎样的，对此我非常好奇。"
     },
     {
-        "avatar": "https://qlogo1.store.qq.com/qzone/7249864/7249864/100?1461031672",
-        "name": "刘永军",
-        "words": "践行终身学习，结合公司需求，学以致用。"
-    },
-    {
         "avatar": "https://pan.baidu.com/s/1boV6rHt",
         "name": "刘争春",
         "words": "被徐老师的超低价给吸引进来了，本来学的是python数据科学，哈哈哈！！！"
@@ -364,14 +334,14 @@
         "words": "继续在编程的奇妙世界里探索"
     },
     {
-        "avatar": "https://ws1.sinaimg.cn/large/006tKfTcly1fj23busdqjj30940b4teb.jpg",
-        "name": "李永静",
-        "words": "说实话这样的学习机会很少，大家平时工作都很忙，最大的感慨就是时间不够用的，老师能这样尽心尽力的教我们，群里有这么多热心的同学，我没有理由不好好学"
-    },
-    {
         "avatar": "https://ws1.sinaimg.cn/large/006tKfTcgy1fi8vbcwpx0j30no0no0v5.jpg",
         "name": "Rachel",
         "words": "我想做一个小程序解决工作中重复的工作／我想参与未来的世界。"
+    },
+    {
+        "avatar": "https://avatars0.githubusercontent.com/u/384727?v=4&s=460",
+        "name": "蓉儿",
+        "words": "成为屌屌的全栈设计师"
     },
     {
         "avatar": "https://ws3.sinaimg.cn/large/006tKfTcgy1fiihu6re29j30hs0hs3zk.jpg",
@@ -388,17 +358,6 @@
         "name": "MaggieWong王颖",
         "words": "希望能开发一个微信小程序记录外用内服药使用情况"
     },
-    {
-        "avatar": "https://avatars0.githubusercontent.com/u/384727?v=4&s=460",
-        "name": "蓉儿",
-        "words": "成为屌屌的全栈设计师"
-    },
-    {
-        "avatar": "http://pan.baidu.com/s/1cpStK6",
-        "name": "欧阳春",
-        "words": "学习编程思维，现在才交作业，才搞懂"
-    },
-    null,
     {
         "avatar": "http://pan.baidu.com/s/1i5DtEct",
         "name": "Marshalcy",
@@ -420,12 +379,12 @@
         "words": "能让自己建立的网站更加生动活泼"
     },
     {
-        "avatar": "https://ws2.sinaimg.cn/large/006tNc79gy1fiekv1tc2wj3069069mx4.jpg",
+        "avatar": "![](https://ws2.sinaimg.cn/large/006tNc79gy1fiekv1tc2wj3069069mx4.jpg)",
         "name": "Risexie",
         "words": "学习编程是我新生活的开始，是为了更好地和未来的世界相处"
     },
     {
-        "avatar": "https://ws3.sinaimg.cn/large/006tNc79ly1fj23gkeumnj30b40b4q4a.jpg",
+        "avatar": "https://thumbnail0.baidupcs.com/thumbnail/95ad93042afabb51e22b50fd58b8f002?fid=2268448149-250528-183556074450162&time=1503734400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-A1Co6jgYylN8FRp4NpKiVDDWAm0=&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5513049876932718980&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video",
         "name": "陈如珊",
         "words": "认真地玩编程，开心地学Javascript。"
     },
@@ -435,7 +394,7 @@
         "words": "培训学习的良好习惯，提升个人竞争力，提高自身的生活品质。"
     },
     {
-        "avatar": "https://github.com/zjutszl/my_post_images/blob/master/26155027.jpg?raw=true",
+        "avatar": "https://raw.githubusercontent.com/zjutszl/hello-world/master/zjutszl.jpg",
         "name": "沈志立",
         "words": "刚刚加入新大这个大家庭，久违了。老早就想学一门计算机语言了，但总是从入门到放弃:),希望这次能快速入门，正式进入程序员的世界~"
     },
@@ -449,7 +408,6 @@
         "name": "孙博",
         "words": "制作出自己的JS小作品，享受并收获认真思考练习提升的过程"
     },
-    null,
     {
         "avatar": "http://ww3.sinaimg.cn/large/006tKfTcgy1fiutn4rxwhj30hs0hsq2z.jpg",
         "name": "孙艳",
@@ -505,14 +463,11 @@
         "name": "王长庆（Frank）",
         "words": "Firstly, it is because XinShengDaXue put up this lesson, and I am a student who saw it. XinDa is a fantastic place and I love it, although I haven't known a lot about this lesson, but I believe I can learn much from it.    Secondly, I have heard a lot about programming. This is a world made of CODE, so programmer can make many things by programming. I want to be a programmer, or be a man knowing something about programming at least. I think if my dream comes ture, my life will have more fun and more possibility.    In one word, programming is a kind of magic in my eyes, JAVAscript is a chance for my to get this magic."
     },
-    null,
     {
         "avatar": "http://b131.photo.store.qq.com/psb?/V10MQthU4Wxqzy/QQOB.XuWvwI7ouyZAaVtDVt3T8.iR*FguIh*nLF2pAA!/b/dBseG06zAwAA&bo=ngL2AQAAAAABB0s!&rf=viewer_4",
         "name": "王美玲",
         "words": "我想学好这门课，这是我第一次正儿八经地上编程课；很幸运能遇到徐老师。"
     },
-    null,
-    null,
     {
         "avatar": "http://a2.qpic.cn/psb?/V13xDUYI0lw68j/PWRY82rfXz6V.fDKzLKPMLwPIGGHjsVGnu5OdrYjcFU!/b/dD8BAAAAAAAA&bo=ZwFnAQAAAAARADc!&rf=viewer_4&t=5",
         "name": "王宣鼎",
@@ -538,23 +493,21 @@
         "name": "王仲斌",
         "words": "掌握一门技术，可以独立开发小程序，和一些工具，成为一个跨纬度生长的人"
     },
-    null,
     {
         "avatar": "https://ws2.sinaimg.cn/large/006tKfTcly1fic46qkg8zj30zk0zkwh0.jpg",
         "name": "郭威",
         "words": "打磨编程技能，解决自己和他人生活中问题，赚钱"
     },
     {
-        "avatar": "https://avatars1.githubusercontent.com/u/29993284?v=4&u=d5728c1c5fab19cbb0d0aa6c7f80cac6ced02cae&s=400",
-        "name": "温云新",
-        "words": "学习前端必修课，开发微信小程序"
-    },
-    {
         "avatar": "http://a1.qpic.cn/psb?/746f526d-5a85-440c-bd36-f4e5e4285e00/rftDdSBZXQwo2Tghi6DW18vkaZ.8EvrOzJKa*ZWn1cM!/b/dD4BAAAAAAAA&bo=kQKQApECkAIRADc!&rf=viewer_4",
         "name": "温刘欣",
         "words": "希望有拿得出手的技能，毕业后能到互联网公司工作。"
     },
-    null,
+    {
+        "avatar": "https://avatars1.githubusercontent.com/u/29993284?v=4&u=d5728c1c5fab19cbb0d0aa6c7f80cac6ced02cae&s=400",
+        "name": "温云新",
+        "words": "学习前端必修课，开发微信小程序"
+    },
     {
         "avatar": "http://wx3.sinaimg.cn/large/68487189ly1fiel3jeyogj20hs0hsaa5.jpg",
         "name": "吴高星",
@@ -566,7 +519,7 @@
         "words": "学习编程是为了理解这个世界的底层代码，未来已来，未来不远。"
     },
     {
-        "avatar": "http://a2.qpic.cn/psb?/V11gEvOt4cCVez/6ge1tCxikCCzfOs7i9yjnmJjOPXGanLoRKRQyRl4bXs!/b/dIUBAAAAAAAA&ek=1&kp=1&pt=0&bo=gAKAAoACgAIRADc!&tm=1504231200&sce=0-12-12&rf=viewer_311",
+        "avatar": "http://pan.baidu.com/s/1i4RqvnZ",
         "name": "夏能啟",
         "words": "我想踏入编程大门，未来将会是万物互联的时代，掌握编程这门技术会是刚需，现状MR混合现实技术已经悄悄来临了，我想运用MR技术来解决社会上制造业的问题，首先我要学习编程来运用编程结合MR技术来解决制造业的问题，以上我暂时总结了这几点，希望和同学们一起进步，加油"
     },
@@ -611,22 +564,20 @@
         "words": "JavaScript is a must in front-end, I'm using it for my projects now.And, I'd like to make it useful for me both in front-end and back-end. Wow, pretty cool."
     },
     {
-        "avatar": "http://wx3.sinaimg.cn/mw1024/61cb7abdgy1fi85e6hp1tj20gx0gxgor.jpg",
-        "name": "Terry Yang",
-        "words": "学习新的技能，开启新的生活体验，走向下一个7年"
+        "avatar": "你头像的链接地址",
+        "name": "你的名字",
+        "words": "你学习JavaScript的心愿"
     },
     {
         "avatar": "http://otnjt3h06.bkt.clouddn.com/image/%E5%BE%AE%E4%BF%A1%E5%A4%B4%E5%83%8F.jpg",
         "name": "杨学武",
         "words": "从开始学习编程到使用 ASP.NET 编写第一个管理系统网站，前后用时一年多，在这个过程中，一路磕磕绊绊，总是在为了新的界面、更友好的交互方式、更方便用户使用而发现跟多的东西，Bootstrap，JavaScript，jQuery......网站也从开始翻着一本《ASP.NET从入门到精通》找例子，在博客园找控件的用法，到现在会写一点简单的 JavaScript 语句响应用户操作，利用 Bootstrap 对网站进行布局。这次之所以要学习 JavaScript 课程，有两个目的。 一是想通过和老师一起学习，能够更好的运用 JavaScript,并且我也是因为在课程目录里看到老师会讲 jQuery ，觉得必须要上这个课。二是想和大家在一起学习，听老师讲课，能听到不一样的声音，吸收不一样的想法，学到更多编程思维方面的知识。"
     },
-    null,
     {
         "avatar": "http://oug6btu3p.bkt.clouddn.com/%E5%A4%B4%E5%83%8F.jpg",
         "name": "严情木",
         "words": "Now, I’m in the JavaScript learning program, and start to use Gitbub. It’s very interesting. Can you feel my smile mouth?😀"
     },
-    null,
     {
         "avatar": "https://o3b126ie1.qnssl.com/avatar/40663b07-cb8b-4ba0-90b9-bb30543289e1",
         "name": "尹旭",
@@ -667,8 +618,6 @@
         "name": "张倩",
         "words": "习得新技能，培养自己的耐性。"
     },
-    null,
-    null,
     {
         "avatar": "https://ws3.sinaimg.cn/large/006tKfTcgy1fidqzbxnllj30fi0fiq4t.jpg",
         "name": "zhaochunyi",
@@ -689,7 +638,6 @@
         "name": "赵一楠",
         "words": "我希望学习JavaScript能帮我在北京找到一份月收入2万的工作"
     },
-    null,
     {
         "avatar": "http://opqyer7zj.bkt.clouddn.com/17-8-7/84970174.jpg",
         "name": "郑承演",
@@ -725,7 +673,6 @@
         "name": "朱宁宁",
         "words": "希望自己和孩子都不被现实世界限制，走向自由"
     },
-    null,
     {
         "avatar": "http://chuantu.biz/t5/164/1502191686x2890149518.jpg",
         "name": "Eugene",

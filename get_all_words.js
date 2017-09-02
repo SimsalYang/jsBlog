@@ -33,6 +33,7 @@ fs.readdir(pathString, function(err, files) {
   var jsonList = [];
   var errorFiles = [];
   var container = [];
+  
   for (var i = 0; i < jsonFiles.length; i++) {
     try {
       // 读取json文件
@@ -45,15 +46,20 @@ fs.readdir(pathString, function(err, files) {
         container.push(obj);
         jsonfile.writeFile(writePathString, container, function (err) {
           if (err) {
-            console.log(err)
+            errorFiles.push(jsonFiles[i]);
+            jsonfile.writeFile(errorPathString, err, function (err) { 
+              if (err) {
+                console.log('error');
+              }              
+            });
           }
-          console.log('写入成功！');
         });
       });
       //jsonList.push(content);
     } catch (err) {
       // 如果读取错误就把错误的文件名写入到errorFiles数组内
       //errorFiles.push(jsonFiles[i]);
+      console.log(err);
     }
   }
 
