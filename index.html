@@ -10,58 +10,65 @@
     <script src="./Vue/vue.js"></script>
 </head>
 <body>
-    <div class="container-fluid ">
+    <div class="jumbotron">
+        <h1 class="text-center ">Javascript练习册</h1>
+    </div>
+    
+    <div id="app">
+    <div class="container">
         <div class="row ">
-            <div class="col-lg-12 col-md-12 col-xs-12 ">
-                <h1 class="text-center ">我的Javascript笔记</h1>
-            </div>
-            <div class="col-lg-12 col-md-12 col-xs-12 well ">
-                <div class="col-lg-1 col-md-1 col-xs-1 "></div>
-                <div class="col-lg-10 col-md-10 col-xs-10 ">
+            <div class="col-lg-12 col-md-12 col-xs-12">
                     <div class="row ">
-                        <div class="col-lg-2 col-md-2 col-xs-2 ">                       
-                            <ul class="list-unstyled ">
-                                <li>
+                        <div class="col-lg-4 col-md-4 col-xs-4">                       
+                            <ul class="panel list-group">
+                                <li class="list-group-item">
                                     <a href="https://github.com/SimsalYang/Javascript_xsdx/blob/master/Documents/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AD%A6%E4%B9%A0JavaScript.md ">我的心里话</a>
                                 </li>
-                                <li>
+                                <li class="list-group-item">
                                     <a href="https://github.com/SimsalYang/simsalyang.github.io/blob/master/_posts/2017-08-10-git-command.md ">git常用命令（持续更新）</a>
                                 </li>
-                                <li>
+                                <li class="list-group-item">
                                     <a href="https://github.com/SimsalYang/getting-started-with-javascript/blob/master/homework/lesson1/yangxuewu.md ">第一课总结</a>
                                 </li>
-                                <li>
+                                <li class="list-group-item">
                                     <a href="# ">第二课总结</a>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="col-lg-10 col-md-10 col-xs-10 ">
-                            <div class="row">
-                            <div id="app">
-                                <div class="form-group" v-for="item in wordLists_right">
-                                    <div class="media">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object avatar" style="width:80px;height:80px;border-radius:6px;" v-bind:src="item.avatar" v-bind:alt="item.name">
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                        <h4 class="media-heading">
-                                            {{item.name}}
-                                        </h4>
-                                        <p>
-                                            {{item.words}}
-                                        </p>
-                                </div>
-                            </div>
-                                </div>
+                            <div class="panel panel-danger">
+                                <div class="panel-heading">这些文件格式有误</div>
+                                    <ul class="list-group" v-for="item in wordList_error">
+                                        <li class="list-group-item">
+                                            {{item}}
+                                        </li>
+                                    </ul>
                             </div>
                         </div>
-                    </div>
+                        <div class="col-lg-8 col-md-8 col-xs-8">
+                            <div class="panel panel-primary">
+                            <div class="panel-heading">大家的心里话</div>
+                            <div class="panel-body">
+                                <div class="media panel panel-body list-group" v-for="item in wordLists_right">                                   
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object avatar" style="width:80px;height:80px;border-radius:6px;" v-bind:src="item.avatar" v-bind:alt="item.name">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                            <h4 class="media-heading">
+                                                {{item.name}}
+                                            </h4>
+                                            <p>
+                                                {{item.words}}
+                                            </p>
+                                    </div>
+                            </div> 
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <script src="./Vue/allwords.js"></script>
 </body>
