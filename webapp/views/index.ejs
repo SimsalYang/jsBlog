@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的JavaScript笔记</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <script src="/javascripts/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="text-center ">Javascript练习册</h1>
+    </div>
+    
+    <div id="app">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="row ">
+                        <div class="col-lg-4 col-md-4 col-xs-4">
+                            <div class="panel panel-success">
+                                <div class="panel-heading">想要对老师说的话</div>
+                                <div class="panel-body">
+                                    <div class="form-group form-inline">
+                                        <label for="">你的姓名：</label>
+                                        <input type="text" v-model="name" class="form-control" placeholder="填写你交作业时的姓名拼音格式">
+                                    </div>
+                                    <div class="form-group form-inline">
+                                        <label for="">新大账户：</label>
+                                        <input type="text" v-model="account" class="form-control" placeholder="填写你的新生大学邮箱或手机号">
+                                    </div>
+                                    <div class="form-group form-inline">
+                                        <label for="">想说的话：</label>
+                                        <input type="text" v-model="content" class="form-control" placeholder="填写你想对老师说的话" multiple="multiple">
+                                    </div>
+                                    <div class="form-group form-inline text-center">
+                                        <button class="btn btn-success" v-on:click="sendData">提交</button>
+                                    </div>
+                                </div>
+                            </div>                                      
+                            <ul class="panel list-group">
+                                <li class="list-group-item">
+                                    <a href="https://github.com/SimsalYang/Javascript_xsdx/blob/master/Documents/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AD%A6%E4%B9%A0JavaScript.md ">我的心里话</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="https://github.com/SimsalYang/simsalyang.github.io/blob/master/_posts/2017-08-10-git-command.md ">git常用命令（持续更新）</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="https://github.com/SimsalYang/getting-started-with-javascript/blob/master/homework/lesson1/yangxuewu.md ">第一课总结</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="# ">第二课总结</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-xs-8">
+                            <div class="panel panel-primary">
+                            <div class="panel-heading">大家的心里话</div>
+                            <div class="panel-body">
+                                <div class="media panel panel-body list-group" v-for="item in wordsList">                                   
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object avatar" style="width:80px;height:80px;border-radius:6px;" v-bind:src="item.avatar" v-bind:alt="item.name">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                            <h4 class="media-heading">
+                                                {{item.name}}
+                                            </h4>
+                                            <p>
+                                                {{item.words}}
+                                            </p>
+                                    </div>
+                            </div> 
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',   // #app 和html中div#id的 app 对应
+            data: {
+            wordsList: [], // 变量wordsList可以在html使用
+            name:'',
+            account:'',
+            content:''
+            },
+            methods: {
+            fetchData: function() {
+                axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')
+                .then(function (response) {
+                    app.wordsList = response.data.words;
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+            },
+            sendData: function() {
+                axios.post('https://js.xinshengdaxue.com/api/v1/learnJS/sayToMe',
+                    {
+                        name: app.name,
+                        account: app.account,
+                        content: app.content
+                    }
+                )
+                .then(function(response){
+                    (function(){
+                        if(response.data.code === 1){
+                            alert('发送成功！'+'<a href="http://js.xinshengdaxue.com/sayToTeacher">点击这里</a>查看');
+                        }
+                        else {
+                            alert('发送失败！');
+                        }
+                    })();
+                })
+                .catch(function(error){
+                    alert(error);
+                });
+            }
+        }
+    });
+
+    app.fetchData();
+    </script>
+</body>
+</html>
