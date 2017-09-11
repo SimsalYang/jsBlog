@@ -14,6 +14,13 @@
         .badge{
             background-color:rgba(255,255,255,0);
         }
+        p{
+            margin-top:5px;
+            margin-left: 5px;
+            letter-spacing: 2px;
+            line-height: 180%;
+        }
+        h3{letter-spacing: 2px;}
     </style>
 </head>
 <body>
@@ -66,19 +73,19 @@
                             <div class="panel panel-primary">
                             <div class="panel-heading">大家的心里话</div>
                             <div class="panel-body">
-                                <div class="media panel panel-body list-group" v-for="item in wordsList">                                   
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object avatar" style="width:80px;height:80px;border-radius:6px;" v-bind:src="item.avatar" v-bind:alt="item.name">
-                                        </a>
-                                    </div>
+                                <div class="media panel panel-body list-group" v-for="item in wordsList">
                                     <div class="media-body">
                                             <h3 class="media-heading">
-                                            <span class="badge"><avatar v-bind:username='item.name'></avatar></span>{{item.name}}
+                                            <avatar  class="badge" v-bind:username='item.name'></avatar>{{item.name}}
                                             </h3>
                                             <p>
                                                 {{item.words}}
                                             </p>
+                                    </div>                                   
+                                    <div class="media-right">
+                                        <a href="#">
+                                            <img class="media-object avatar" style="width:220px;height:auto;" v-bind:src="item.avatar" v-bind:alt="item.name">
+                                        </a>
                                     </div>
                             </div> 
                         </div>
