@@ -8,7 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="./public/bootstrap.css">
     <script src="./Vue/vue.js"></script>
+    <script src="./node_modules/vue-avatar/dist/vue-avatar.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <style>
+        .badge{
+            background-color:rgba(255,255,255,0);
+        }
+    </style>
 </head>
 <body>
     <div class="jumbotron">
@@ -67,9 +73,9 @@
                                         </a>
                                     </div>
                                     <div class="media-body">
-                                            <h4 class="media-heading">
-                                                {{item.name}}
-                                            </h4>
+                                            <h3 class="media-heading">
+                                            <span class="badge"><avatar v-bind:username='item.name'></avatar></span>{{item.name}}
+                                            </h3>
                                             <p>
                                                 {{item.words}}
                                             </p>
@@ -94,7 +100,10 @@
             name:'',
             account:'',
             content:''
-            },
+            },            
+            components: {
+                    'avatar': Avatar.Avatar
+                },
             methods: {
             fetchData: function() {
                 axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')

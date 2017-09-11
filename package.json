@@ -2,6 +2,7 @@
   "name": "useJSONFile",
   "dependencies": {
     "eslint": "^4.6.1",
-    "jsonfile": "3.0.1"
+    "jsonfile": "3.0.1",
+    "vue-avatar": "^2.0.0"
   }
 }
