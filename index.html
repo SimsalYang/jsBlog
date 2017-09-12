@@ -8,43 +8,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="./public/bootstrap.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="./public/jQuery-sticky-elements.js"></script>
     <script src="./Vue/vue.js"></script>
     <script src="./Vue/vue-avatar.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <style>
-        body{
+        body {
             background-color: #35495E;
         }
-        .jumbotron{
+
+        .jumbotron {
             background-color: #1D2C3B;
             color: #ffffff;
             letter-spacing: 0.5em;
         }
-        .badge{
-            background-color:rgba(255,255,255,0);
-            color:#ffffff;
+
+        .badge {
+            background-color: rgba(255, 255, 255, 0);
+            color: #ffffff;
         }
-        p{
-            margin-top:5px;
+
+        p {
+            margin-top: 5px;
             margin-left: 5px;
             letter-spacing: 2px;
             line-height: 180%;
-            color:forestgreen;
+            color: forestgreen;
             background-color: #000000;
             padding-left: 5px;
         }
-        h3{letter-spacing: 2px;}
-        .titleh1{
+
+        h3 {
+            letter-spacing: 2px;
+        }
+
+        .titleh1 {
             font-family: Courier;
         }
-        .panel{
+
+        .panel {
             background-color: #182A3B;
         }
-        label{
-            color:#ddd;
+
+        label {
+            color: #ddd;
         }
-        .media{
+
+        .media {
             display: block;
             padding: 4px;
             margin-bottom: 20px;
@@ -53,46 +64,65 @@
             border: 1px solid #ddd;
             border-radius: 0;
         }
-        .media-heading{
-            vertical-align:text-bottom;
-            color:#cccccc;
+
+        .media-heading {
+            vertical-align: text-bottom;
+            color: #cccccc;
         }
+
         .waterfall {
             column-count: 2;
             column-width: 30em;
             column-gap: 0;
-            }
+        }
 
-            .pin {
+        .pin {
             padding: 0;
             margin: 0 0 1em 0;
             break-inside: avoid;
             background: #1C1E38;
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
-            }
-            img {
+        }
+
+        img {
             width: 100%;
             padding-bottom: 1em;
             margin-bottom: 0.5em;
-            border-bottom:0;
-            }
-            .list-group-item{
-                background: #1C1E38;
-            }
+            border-bottom: 0;
+        }
+
+        .list-group-item {
+            background: #1C1E38;
+        }
     </style>
 </head>
+
 <body>
     <div class="jumbotron">
         <h1 class="text-center"><span class="titleh1">JavaScript</span>练习册</h1>
     </div>
-    
+
     <div id="app">
-    <div class="container">
-        <div class="row ">
-            <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-12 col-md-12 col-xs-12">
                     <div class="row ">
                         <div class="col-lg-4 col-md-4 col-xs-12">
-                            <div class="panel panel-success">
+                            <ul class="panel list-group">
+                                <li class="list-group-item">
+                                    <a href="https://github.com/SimsalYang/Javascript_xsdx/blob/master/Documents/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AD%A6%E4%B9%A0JavaScript.md ">我的心里话</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="https://github.com/SimsalYang/simsalyang.github.io/blob/master/_posts/2017-08-10-git-command.md ">git常用命令（持续更新）</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="https://github.com/SimsalYang/getting-started-with-javascript/blob/master/homework/lesson1/yangxuewu.md ">第一课总结</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="# ">第二课总结</a>
+                                </li>
+                            </ul>
+                            <div class="panel panel-success" id="grid1">
                                 <div class="panel-heading">想要对老师说的话</div>
                                 <div class="panel-body">
                                     <div class="form-group form-inline">
@@ -111,100 +141,93 @@
                                         <button class="btn btn-success" v-on:click="sendData">提交</button>
                                     </div>
                                 </div>
-                            </div>                    
-                            <ul class="panel list-group">
-                                <li class="list-group-item">
-                                    <a href="https://github.com/SimsalYang/Javascript_xsdx/blob/master/Documents/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AD%A6%E4%B9%A0JavaScript.md ">我的心里话</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="https://github.com/SimsalYang/simsalyang.github.io/blob/master/_posts/2017-08-10-git-command.md ">git常用命令（持续更新）</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="https://github.com/SimsalYang/getting-started-with-javascript/blob/master/homework/lesson1/yangxuewu.md ">第一课总结</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="# ">第二课总结</a>
-                                </li>
-                            </ul>
+                            </div>
                         </div>
                         <div class="col-lg-8 col-md-8 col-xs-12">
                             <div class="panel panel-primary">
-                            <div class="panel-heading">大家的心里话</div>
-                            <div class="panel-body waterfall">
-                                <div id="panelContent" class="col-lg-6 col-md-6 col-xs-12 media pin" v-for="item in wordsList">
-                                    <div class="media-body">
+                                <div class="panel-heading">大家的心里话</div>
+                                <div class="panel-body waterfall">
+                                    <div id="panelContent" class="col-lg-6 col-md-6 col-xs-12 media pin" v-for="item in wordsList">
+                                        <div class="media-body">
                                             <p>
                                                 {{item.words}}
                                             </p>
                                             <h3 class="media-heading">
-                                            <avatar  class="badge" v-bind:username='item.name'></avatar>{{item.name}}
+                                                <avatar class="badge" v-bind:username='item.name'></avatar>{{item.name}}
                                             </h3>
-                                    </div>                                   
-                                    <div class="media-right">
-                                        <a href="#">
+                                        </div>
+                                        <div class="media-right">
+                                            <a href="#">
                                             <img class="media-object avatar" style="width:160px;height:auto;" v-bind:src="item.avatar" v-bind:alt="item.name">
                                         </a>
+                                        </div>
                                     </div>
-                            </div> 
-                        </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
     <!--
     <script src="./Vue/allwords.js"></script>
     -->
     <script>
         var app = new Vue({
-            el: '#app',   // #app 和html中div#id的 app 对应
+            el: '#app', // #app 和html中div#id的 app 对应
             data: {
-            wordsList: [], // 变量wordsList可以在html使用
-            name:'',
-            account:'',
-            content:''
-            },            
-            components: {
-                    'avatar': Avatar.Avatar
-                },
-            methods: {
-            fetchData: function() {
-                axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')
-                .then(function (response) {
-                    app.wordsList = response.data.words;
-                })
-                .catch(function (error) {
-                    console.log(error);
-                });
+                wordsList: [], // 变量wordsList可以在html使用
+                name: '',
+                account: '',
+                content: ''
             },
-            sendData: function() {
-                axios.post('https://js.xinshengdaxue.com/api/v1/learnJS/sayToMe',
-                    {
-                        name: app.name,
-                        account: app.account,
-                        content: app.content
-                    }
-                )
-                .then(function(response){
-                    (function(){
-                        if(response.data.code === 1){
-                            alert('发送成功！'+'<a href="http://js.xinshengdaxue.com/sayToTeacher">点击这里</a>查看');
-                        }
-                        else {
-                            alert('发送失败！');
-                        }
-                    })();
-                })
-                .catch(function(error){
-                    alert(error);
-                });
+            components: {
+                'avatar': Avatar.Avatar
+            },
+            methods: {
+                fetchData: function () {
+                    axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')
+                        .then(function (response) {
+                            app.wordsList = response.data.words;
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                        });
+                },
+                sendData: function () {
+                    axios.post('https://js.xinshengdaxue.com/api/v1/learnJS/sayToMe', {
+                            name: app.name,
+                            account: app.account,
+                            content: app.content
+                        })
+                        .then(function (response) {
+                            (function () {
+                                if (response.data.code === 1) {
+                                    alert('发送成功！' +
+                                        '<a href="http://js.xinshengdaxue.com/sayToTeacher">点击这里</a>查看'
+                                    );
+                                } else {
+                                    alert('发送失败！');
+                                }
+                            })();
+                        })
+                        .catch(function (error) {
+                            alert(error);
+                        });
+                }
             }
-        }
-    });
+        });
 
-    app.fetchData();
+        app.fetchData();
+    </script>
+    <script>
+        $("#grid1").stikify({
+            floor: 400,
+            rate: 1,
+            cieling: 100,
+        });
     </script>
 </body>
+
 </html>
